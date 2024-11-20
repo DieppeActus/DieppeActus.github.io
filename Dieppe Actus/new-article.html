@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publier un Article</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mon Journal en Ligne</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="new-article.html">Publier un Article</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Publier un Nouvel Article</h2>
+        <form action="submit-article.php" method="POST">
+            <label for="title">Titre de l'article :</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="content">Contenu :</label>
+            <textarea id="content" name="content" rows="10" required></textarea>
+            
+            <button type="submit">Publier</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mon Journal. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
